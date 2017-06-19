@@ -13,16 +13,12 @@ namespace Microsoft.Azure.Management.Media.Models
     using System.Runtime.Serialization;
 
     /// <summary>
-    /// Defines values for EntityNameUnavailabilityReason.
+    /// Defines values for ResourceType.
     /// </summary>
     [JsonConverter(typeof(StringEnumConverter))]
-    public enum EntityNameUnavailabilityReason
+    public enum ResourceType
     {
-        [EnumMember(Value = "None")]
-        None,
-        [EnumMember(Value = "Invalid")]
-        Invalid,
-        [EnumMember(Value = "AlreadyExists")]
-        AlreadyExists
+        [EnumMember(Value = "mediaservices")]
+        Mediaservices
     }
 }
